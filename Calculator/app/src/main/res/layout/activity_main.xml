@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/ekran"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/screen_gray"
+        android:fontFamily="sans-serif-thin"
+        android:textColor="@color/white"
+        android:textIsSelectable="true"
+        android:textSize="35pt"
+        android:gravity="end|center_vertical"
+        tools:text="0" />
+
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="?android:attr/buttonBarStyle"
+            >
+
+            <Button
+                android:id="@+id/bac"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:layout_weight="1"
+                android:background="@color/number_white"
+                android:fontFamily="sans-serif-light"
+                android:onClick="onButtonAC"
+                android:text="AC"
+                android:textColor="@color/black"
+                android:textSize="14pt"
+                app:backgroundTint="@color/number_white" />
+
+            <Button
+                android:id="@+id/bplusminus"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:layout_weight="1"
+                android:background="@color/number_white"
+                android:fontFamily="sans-serif-light"
+                android:onClick="onButtonNum"
+                android:text="+/-"
+                android:textColor="@color/black"
+                android:textSize="14pt"
+                app:backgroundTint="@color/number_white" />
+
+            <Button
+                android:id="@+id/bposto"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:layout_weight="1"
+                android:background="@color/number_white"
+                android:fontFamily="sans-serif-light"
+                android:onClick="onButtonMatOp"
+                android:text="%"
+                android:textColor="@color/black"
+                android:textSize="14pt"
+                app:backgroundTint="@color/number_white" />
+
+            <Button
+                android:id="@+id/bputa"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:layout_weight="1"
+                android:background="@color/function_orange"
+                android:fontFamily="sans-serif-light"
+                android:onClick="onButtonMatOp"
+                android:text="*"
+                android:textColor="@color/white"
+                android:textSize="14pt"
+                app:backgroundTint="@color/function_orange" />
+        </TableRow>
+
+        <TableRow
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/b7"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:layout_weight="1"
+                android:background="@color/number_white"
+                android:fontFamily="sans-serif-light"
+                android:onClick="onButtonNum"
+                android:text="7"
+                android:textColor="@color/black"
+                android:textSize="14pt"
+                app:backgroundTint="@color/number_white" />
+
+            <Button
+                android:id="@+id/b8"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:layout_weight="1"
+                android:background="@color/number_white"
+                android:fontFamily="sans-serif-light"
+                android:onClick="onButtonNum"
+                android:text="8"
+                android:textColor="@color/black"
+                android:textSize="14pt"
+                app:backgroundTint="@color/number_white" />
+
+            <Button
+                android:id="@+id/b9"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:layout_weight="1"
+                android:background="@color/number_white"
+                android:fontFamily="sans-serif-light"
+                android:onClick="onButtonNum"
+                android:text="9"
+                android:textColor="@color/black"
+                android:textSize="14pt"
+                app:backgroundTint="@color/number_white" />
+
+            <Button
+                android:id="@+id/bdjelj"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:layout_weight="1"
+                android:background="@color/function_orange"
+                android:fontFamily="sans-serif-light"
+                android:onClick="onButtonMatOp"
+                android:text="/"
+                android:textColor="@color/white"
+                android:textSize="14pt"
+                app:backgroundTint="@color/function_orange" />
+
+        </TableRow>
+
+        <TableRow
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/b4"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:layout_weight="1"
+                android:background="@color/number_white"
+                android:fontFamily="sans-serif-light"
+                android:onClick="onButtonNum"
+                android:text="4"
+                android:textColor="@color/black"
+                android:textSize="14pt"
+                app:backgroundTint="@color/number_white" />
+
+            <Button
+                android:id="@+id/b5"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:layout_weight="1"
+                android:background="@color/number_white"
+                android:fontFamily="sans-serif-light"
+                android:onClick="onButtonNum"
+                android:text="5"
+                android:textColor="@color/black"
+                android:textSize="14pt"
+                app:backgroundTint="@color/number_white" />
+
+            <Button
+                android:id="@+id/b6"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="40pt"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/number_white"
+                android:fontFamily="sans-serif-light"
+                android:onClick="onButtonNum"
+                android:text="6"
+                android:textColor="@color/black"
+                android:textSize="14pt"
+                app:backgroundTint="@color/number_white" />
+
+            <Button
+                android:id="@+id/bplus"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:layout_weight="1"
+                android:background="@color/function_orange"
+                android:fontFamily="sans-serif-light"
+                android:onClick="onButtonMatOp"
+                android:text="+"
+                android:textColor="@color/white"
+                android:textSize="14pt"
+                app:backgroundTint="@color/function_orange" />
+        </TableRow>
+
+        <TableRow
+            style="?android:attr/buttonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/b1"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:layout_weight="1"
+                android:background="@color/number_white"
+                android:fontFamily="sans-serif-light"
+                android:onClick="onButtonNum"
+                android:text="1"
+                android:textColor="@color/black"
+                android:textSize="14pt"
+                app:backgroundTint="@color/number_white" />
+
+            <Button
+                android:id="@+id/b2"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:layout_weight="1"
+                android:background="@color/number_white"
+                android:fontFamily="sans-serif-light"
+                android:onClick="onButtonNum"
+                android:text="2"
+                android:textColor="@color/black"
+                android:textSize="14pt"
+                app:backgroundTint="@color/number_white" />
+
+            <Button
+                android:id="@+id/b3"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:layout_weight="1"
+                android:background="@color/number_white"
+                android:fontFamily="sans-serif-light"
+                android:onClick="onButtonNum"
+                android:text="3"
+                android:textColor="@color/black"
+                android:textSize="14pt"
+                app:backgroundTint="@color/number_white" />
+
+            <Button
+                android:id="@+id/bminus"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:layout_weight="1"
+                android:background="@color/function_orange"
+                android:fontFamily="sans-serif-light"
+                android:onClick="onButtonMatOp"
+                android:text="-"
+                android:textColor="@color/white"
+                android:textSize="14pt"
+                app:backgroundTint="@color/function_orange" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/b0"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="80pt"
+            android:layout_height="40pt"
+            android:layout_weight="1"
+            android:background="@color/number_white"
+            android:fontFamily="sans-serif-light"
+            android:onClick="onButtonNum"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="14pt"
+            app:backgroundTint="@color/number_white" />
+
+        <Button
+            android:id="@+id/btocka"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="40pt"
+            android:layout_height="40pt"
+            android:layout_weight="1"
+            android:background="@color/number_white"
+            android:fontFamily="sans-serif-light"
+            android:onClick="onButtonNum"
+            android:text="."
+            android:textColor="@color/black"
+            android:textSize="14pt"
+            app:backgroundTint="@color/number_white" />
+
+        <Button
+            android:id="@+id/bjednako"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="40pt"
+            android:layout_height="40pt"
+            android:layout_weight="1"
+            android:background="@color/function_orange"
+            android:fontFamily="sans-serif-light"
+            android:onClick="onButtonEq"
+            android:text="="
+            android:textColor="@color/white"
+            android:textSize="14pt"
+            app:backgroundTint="@color/function_orange" />
+    </LinearLayout>
+</LinearLayout>

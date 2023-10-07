@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/LinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5pt"
+    android:background="@color/white"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@drawable/background"
+        >
+
+        <ImageView
+            android:id="@+id/profil"
+            android:layout_width="70pt"
+            android:layout_height="70pt"
+            app:srcCompat="@drawable/baboon" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nameinfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Babbon"
+                android:textColor="@android:color/black"
+                android:textSize="18pt" />
+
+            <TextView
+                android:id="@+id/desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Babbon liva in d dzangl by himsel"
+                android:textColor="@android:color/black"
+                android:textSize="8pt" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

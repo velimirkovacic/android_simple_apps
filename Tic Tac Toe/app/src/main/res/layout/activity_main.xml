@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background = "@color/black"
+    tools:context=".MainActivity" >
+
+    <TableRow
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/button00"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:layout_marginRight="10sp"
+            android:fontFamily="sans-serif-black"
+            android:onClick="buClick"
+            android:textColor="@android:color/black"
+            android:textSize="50sp"
+            app:backgroundTint="@android:color/white" />
+
+        <Button
+            android:id="@+id/button01"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@android:color/black"
+            android:textSize="50sp"
+            android:onClick="buClick"
+            app:backgroundTint="@android:color/white" />
+
+        <Button
+            android:layout_marginLeft="10sp"
+            android:id="@+id/button02"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@android:color/black"
+            android:textSize="50sp"
+            android:onClick="buClick"
+            app:backgroundTint="@android:color/white"/>
+    </TableRow>
+
+    <TableRow
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center" >
+
+        <Button
+            android:layout_marginRight="10sp"
+            android:id="@+id/button10"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@android:color/black"
+            android:textSize="50sp"
+            android:onClick="buClick"
+            app:backgroundTint="@android:color/white"/>
+
+        <Button
+            android:id="@+id/button11"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@android:color/black"
+            android:textSize="50sp"
+            android:onClick="buClick"
+            app:backgroundTint="@android:color/white" />
+
+        <Button
+            android:layout_marginLeft="10sp"
+            android:id="@+id/button12"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@android:color/black"
+            android:textSize="50sp"
+            android:onClick="buClick"
+            app:backgroundTint="@android:color/white"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center" >
+
+        <Button
+            android:layout_marginEnd="10sp"
+            android:id="@+id/button20"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@android:color/black"
+            android:textSize="50sp"
+            android:onClick="buClick"
+            app:backgroundTint="@android:color/white"/>
+
+        <Button
+            android:id="@+id/button21"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@android:color/black"
+            android:textSize="50sp"
+            android:onClick="buClick"
+            app:backgroundTint="@android:color/white"/>
+
+        <Button
+            android:layout_marginLeft="10sp"
+            android:id="@+id/button22"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@android:color/black"
+            android:textSize="50sp"
+            android:onClick="buClick"
+            app:backgroundTint="@android:color/white"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="resetClick"
+            android:text="Reset"
+            android:textColor="@android:color/black"
+            app:backgroundTint="@android:color/white" />
+    </TableRow>
+</TableLayout>
